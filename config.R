@@ -21,11 +21,14 @@ CONFIG <- list(
   
   
   #turn on/off model category 
-  run_mvgam = TRUE,                                 # Enable mvgam
+  run_mvgam = TRUE,                                  # Enable mvgam
   run_fable = TRUE,                                  # Disable fable for now to test mvgam
   
-  use_ordinal = TRUE,                                #  TRUE = RPS, FALSE = CRPS
-  data_type = "numeric",                             # "numeric" or "ordinal" - structure of response variable
+  use_ordinal = TRUE,                                #  TRUE = Both CRPS and RPS (numeric + ordinal evaluation)
+                                                     #  FALSE = CRPS (numeric evaluation)
+  
+  #this is not working yet - can model by numeric or ordinal data? don't think this will work but keeping it here as a placeholder 
+  data_type = "numeric",                             # "numeric" or "ordinal" - structure of response variable (ordinal doesn't work)
   
   # Ordinal category definitions (quantiles)
   ordinal_breaks = c(0.33, 0.50, 0.67),  # Low, Medium, High, Very High
