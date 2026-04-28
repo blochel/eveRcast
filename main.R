@@ -13,7 +13,8 @@ library(mvgam)
 library(verification)  # Add this for RPS
 
 # Load configuration and functions
-source("config.R")
+
+CONFIG <- config::get()
 source("data_functions.R")
 source("evaluation.R")
 source("plotting.R")

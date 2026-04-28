@@ -33,7 +33,7 @@ remotes::install_github("weecology/edenr")
 ```
 .
 ├── main.R                          # Main execution script
-├── config.R                        # Configuration settings
+├── config.yml                      # Configuration settings
 ├── data_functions.R                # Data loading and preparation
 ├── evaluation.R                    # Cross-validation and metrics
 ├── plotting.R                      # Visualization functions
@@ -47,7 +47,7 @@ remotes::install_github("weecology/edenr")
 └── results/
     ├── RDS_results/               # Saved model outputs
     └── *.png                      # Generated plots
-```    
+```     
     
     
 ## Workflow
