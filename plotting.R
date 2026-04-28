@@ -2,9 +2,9 @@
 # plotting ----------------------------------------------------------------
 
 
-library(ggplot2)
-library(dplyr)
-library(tidyr)
+library(ggplot2)          # figures
+library(dplyr)            # data manipulation 
+library(tidyr)            # data structure
 
 generate_plots <- function(results, config) {
   

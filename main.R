@@ -2,15 +2,15 @@
 # main --------------------------------------------------------------------
 
 
-library(distributional)
-library(dplyr)
-library(ggplot2)
-library(glue)
-library(tidyr)
-library(tsibble)
-library(wader)
-library(mvgam)
-library(verification)  # Add this for RPS
+library(distributional)  # vectorised probablility distribution 
+library(dplyr)           # data manipulation 
+library(ggplot2)         # figures
+library(glue)            # string formatting 
+library(tidyr)           # data structure
+library(tsibble)         # fable models
+library(wader)           # bird data
+library(mvgam)           # dgam models
+library(verification)    # RPS
 
 # Load configuration and functions
 

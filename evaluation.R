@@ -1,8 +1,8 @@
-# evaluation.R - REFACTORED
-library(dplyr)
-library(tidyr)
-library(verification)
-library(distributional)
+# evaluation.R 
+library(dplyr)              # data manipulation 
+library(tidyr)              # data structure
+library(verification)       # RPS
+library(distributional)     # vectorised probability distribution 
 
 # =============================================================================
 # SLIDING WINDOW FRAMEWORK (Universal)
@@ -107,7 +107,7 @@ calculate_rps_mvgam <- function(predictions, test_data, train_data, config, prec
       # Assuming columns Q2.5, Q25, Q50, Q75, Q97.5 exist
       # Interpolate to get probabilities at category boundaries
       
-      # Simple approach: assume normal distribution from Estimate and std dev                            this needs to be in config.R
+      # Simple approach: assume normal distribution from Estimate and std dev                           
       pred_sd = (Q97.5 - Q2.5) / (2 * 1.96),  # Approximate SD from 95% PI
       
       prob_low = pnorm(low, mean = Estimate, sd = pred_sd),

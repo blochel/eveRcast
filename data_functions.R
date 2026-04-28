@@ -1,10 +1,10 @@
 # data_functions.R - FIXED
-library(edenR)
-library(dplyr)
-library(readr)
-library(tidyr)
-library(tsibble)
-library(wader)  
+library(edenR)           # eden (water) data
+library(dplyr)           # data manipulation 
+library(readr)           # read data
+library(tidyr)           # data structure
+library(tsibble)         # fable 
+library(wader)           # bird data
 
 get_data <- function(level, path = ".") {
   counts <- tibble(max_counts(level = level, path = path)) |>

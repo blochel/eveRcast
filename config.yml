@@ -5,9 +5,9 @@ default:
     mvgam:
       - baseline
       - ar
-      # - ar_exog
-      # - species_specific
-      # - trait
+      - ar_exog
+      - species_specific
+      - trait
     fable:
       - baseline
       - arima
@@ -15,7 +15,7 @@ default:
       - arima_exog
   
   # Execution control
-  run_mvgam: false
+  run_mvgam: true 
   run_fable: true
   
   # Evaluation settings
